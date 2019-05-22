@@ -1,7 +1,11 @@
 import Link from "next/link"
 import Header from "../components/header"
 
-const mr2 = { marginRight: "1em" }
+const linkStyle = {
+  marginRight: "1em",
+  borderBottom: "solid 2px bisque",
+  textDecoration: "none"
+}
 
 function Index() {
   return (
@@ -9,13 +13,13 @@ function Index() {
       <Header />
       <section>
         <Link href="/about">
-          <a style={mr2}>a page</a>
+          <a style={linkStyle}>a page</a>
         </Link>
         <Link href="/api">
-          <a style={mr2}>an api</a>
+          <a style={linkStyle}>an api</a>
         </Link>
         <Link href="https://github.com/endziu/monorepo">
-          <a style={mr2}>git</a>
+          <a style={linkStyle}>git</a>
         </Link>
       </section>
     </main>
