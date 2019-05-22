@@ -1,5 +1,8 @@
 const micro = require("micro")
+const parse = require("url-parse")
 
-module.exports = micro((req, res) => {
-  return '{"data": "beep boop 1 2 3"}'
+module.exports = micro(async (req, res) => {
+  const url = await parse(req.url, true)
+  const { id, luma } = url.query
+  return { id, luma }
 })
