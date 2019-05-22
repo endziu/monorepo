@@ -14,6 +14,9 @@ function Index() {
         <Link href="/api">
           <a style={mr2}>an api</a>
         </Link>
+        <Link href="https://github.com/endziu/monorepo">
+          <a style={mr2}>git</a>
+        </Link>
       </section>
     </main>
   )
