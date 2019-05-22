@@ -1,17 +1,18 @@
 import Link from "next/link"
 import Header from "../components/header"
 
+const mr2 = { marginRight: "1em" }
+
 function Index() {
   return (
     <main>
       <Header />
       <section>
         <Link href="/about">
-          <a>Go to About Me</a>
+          <a style={mr2}>a page</a>
         </Link>
-        <hr />
         <Link href="/api">
-          <a>get data from api</a>
+          <a style={mr2}>an api</a>
         </Link>
       </section>
     </main>
