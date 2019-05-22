@@ -6,8 +6,8 @@
       "use": "@now/node"
     },
     {
-      "src": "/www/*.html",
-      "use": "@now/static"
+      "src": "/www/package.json",
+      "use": "@now/next"
     }
   ],
   "routes": [
