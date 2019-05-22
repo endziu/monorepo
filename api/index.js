@@ -3,6 +3,6 @@ const parse = require("url-parse")
 
 module.exports = micro(async (req, res) => {
   const url = await parse(req.url, true)
-  const { id, luma } = url.query
-  return { id, luma }
+  const { id, foo } = url.query
+  return { id, foo }
 })
