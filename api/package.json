@@ -2,6 +2,6 @@
   "name": "micro-api",
   "dependencies": {
     "micro": "^9.3.5-canary.1",
-    "url-parse": "^1.4.7"
+    "url-parse": "^1.5.8"
   }
 }
